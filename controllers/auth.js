@@ -81,7 +81,6 @@ const logout = async (req, res) => {
 };
 
 const updateUser = async (req, res) => {
-	console.log("req.params :>> ", req.params);
 	const { userId } = req.params;
 
 	const result = await User.findByIdAndUpdate(userId, req.body, {
